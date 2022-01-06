@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const buttonText = 'Click me!';
   return (
     <div className="App">
       <header className="App-header">
@@ -19,7 +20,7 @@ function App() {
         </a>
         <label className="label" htmlFor="name"> Enter name:</label>
       <input id="name" type="text"/>
-      <button style={{ color: 'blue' }}>Submit</button>
+      <button style={{ color: 'blue' }}>{buttonText}</button>
       </header>
     </div>
   );
