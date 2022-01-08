@@ -1,11 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
 
-function getButtonText() {
-  return 'Click On Me!'
-}
+// function getButtonText() {
+//   return 'Click On Me!'
+// }
 function App() {
-  // const buttonText = 'Click me!';
+  const buttonText = {text: "Click on me!"};
   return (
     <div className="App">
       <header className="App-header">
@@ -23,7 +23,7 @@ function App() {
         </a>
         <label className="label" htmlFor="name"> Enter name:</label>
       <input id="name" type="text"/>
-      <button style={{ color: 'blue' }}>{getButtonText()}</button>
+      <button style={{ color: 'blue' }}>{buttonText.text}</button>
       </header>
     </div>
   );
